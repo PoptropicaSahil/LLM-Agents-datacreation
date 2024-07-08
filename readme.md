@@ -1,14 +1,19 @@
 # Objective
 - Build an LLM agent  (AI agent!) that generates data which will be used later for finetuning LLMs
 
+# From docker
+```
+$ docker pull poptropicasahil/llm-agents-datacreation:latest
+```
 
-# Internals
+## Internals
 - Anthropic's Claude model is the LLM agent used internally
-- User will have to provide their API credentials
-- We will use Docker to containerise the application and also upload it to the Docker hub
-
-# Technicals
+- User will have to provide their API credentials from OPENROUTER (https://openrouter.ai/)
+- We use Docker to containerise the application and also upload it to the Docker hub
 - No finetuning, just using the LLMs API
+
+
+## Technicals
 
 # To run the code, you should run
 ```
@@ -19,6 +24,7 @@ $ docker run -it -v {input-directory-path}:/app/data llm-agents
 * `llm-agents`: name of the docker image
 
 for example, for me it is `docker run -it -v C:\Users\Admin\Documents\TMP\CODE\LLM-Agents-Claude\datasets:/app/data llm-agents`
+
 
 
 ## TODO
