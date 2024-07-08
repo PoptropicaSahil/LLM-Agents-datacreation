@@ -1,0 +1,10 @@
+src/venv
+.env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv
+pip-log.txt
+pip-delete-this-directory.txt
